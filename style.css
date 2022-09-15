@@ -10,6 +10,12 @@
     padding:0;
     box-sizing:border-box;
 }
+
+img{
+    max-width: 100%;
+
+}    
+
 ul{
     list-style-type: none;
 }
@@ -41,7 +47,7 @@ button{
     margin-top: 10px;
     margin-bottom: 10px;
     height: 3px;
-    width: 85px;
+    width: 100px;
 
 }
 
@@ -105,6 +111,53 @@ header{
     margin: 0;
 }
 
+/* BOOK NOW SECTION */
+.book-now{
+    padding: 50px 20px;
+    text-align:center;
+}
+
+.book-now h2{
+    margin-bottom: 20px;
+}
+
+.book-now .btn{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    font-family: Poppins;
+    color: #f1f1f1;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.book-now .btn:hover{
+    background-color: transparent;
+    color: var(--secondary-color);
+    transition: 500ms ease-in-out;
+    cursor: pointer;
+}
+
+/* CONFERENCE CENTER */
+
+.conference-center{
+    padding: 0 0 50px 0;
+
+}
+
+.conference-center .conference-center-description{
+    padding: 10px 20px 0;
+    font-weight: 100;
+}
+conference-center .conference-center-description{
+    margin-bottom: 10px;
+
+}
+conference-center .conference-center-description ul li{
+    margin: 5px 0;
+}
+
 @media (min-width:640px){
     .showcase .overlay h1{
         font-size:36px;
@@ -112,11 +165,20 @@ header{
 }
 @media(min-width: 768px){
     .showcase .overlay h1{
-        font-size: 48px;
+        font-size: 38px;
     }
     .showcase .overlay p{
         font-size: 17px;
     }
+
+    .book-now{
+        font-size: 36px;
+    }
+
+    .book-now .btn{
+        padding: 20px 60px
+    }
+
 }
 
 @media (min-width: 1024px){
@@ -126,4 +188,16 @@ header{
     .showcase .overlay p{
         font-size: 18px;
     }
+    .conference-center{
+        max-width: 1000px;
+        margin: auto;
+    }.conference-center .conference-center-description{
+        font-size: 18px;
+    }
+
+    .conference-center h2{
+        font-size: 40px;
+    }
+
+
 }
