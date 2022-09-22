@@ -215,6 +215,7 @@ header{
 .comfy-parent{
     background-color: var(--secondary-color);
     padding: 20px;
+    
 }
 .comfy-parent .comfy-house img{
     padding: 30px;
@@ -250,9 +251,55 @@ header{
 }
 
 .offers{
-    padding: 50px 50px;
+    padding: 50px 0px;
+    margin: 0 20px;
 }
+
+/* FOOTER */
+.footer{
+    height: 300px;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: #ffff;
+    padding: 20px 20px;
+}
+
+.footer h2{
+    color: black;
+    font-size: 30px;
+}
+.footer h2 span{
+    color: #ffff;
+}
+
+.footer a {
+    color:  #000000;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Catamaran, sans-serif;
+}
+
+.footer ul{
+    margin-top: 10px;
+}
+
+.footer ul li{
+    margin: 10px 0;
+}
+
+.footer ul.socials{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.footer ul.socials li{
+    margin: 0 10px;
+    font-size: 24px;
+    cursor: pointer;
     
+}
+
 
 /* MEDIA QUERIES */
 @media (min-width:640px){
@@ -264,6 +311,7 @@ header{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+ 
 
 }
 @media(min-width: 768px){
@@ -281,6 +329,32 @@ header{
     .book-now .btn{
         padding: 20px 60px
     }
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer ul{
+        margin: 0;
+        display: flex;
+    }
+
+    .footer .logo{
+        font-size: 30px;
+    }
+
+    .footer ul.socials{
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .footer ul li{
+        margin: 0 10px;
+
+    }
+
+
 
 }
 
@@ -316,6 +390,7 @@ header{
         font-size: 30px;
     }
 
+
 }
 
 @media (min-width:1280px){
@@ -323,4 +398,5 @@ header{
         max-width: 1100px;
         margin: auto;
     }
+
 }
