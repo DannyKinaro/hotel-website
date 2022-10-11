@@ -1,0 +1,111 @@
+.booking {
+  background: url("./images/room-9.jpg") no-repeat center/cover;
+  height: 500px;
+}
+
+.booking .overlay {
+  height: 500px;
+}
+
+.book-form {
+  padding: 50px 20px;
+}
+.book-form h2{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.book-form .form {
+  max-width: 350px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: auto;
+}
+
+.book-form .form input {
+  width: 100%;
+  margin: 5px 10px;
+  padding: 10px;
+  border: 2px solid #dddd;
+}
+
+.book-form .form label {
+  margin-top: 20px;
+  display: block;
+}
+
+.book-form .form input::placeholder,
+.book-form .form textarea::placeholder {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
+.book-form .form .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-family: "Catamaran", sans-serif;
+}
+
+.book-form .form .checkbox input {
+  margin-top: 25px;
+  height: 20px;
+  width: 20px;
+}
+
+/* .selection{
+    display:flex;
+    justify-content: space-between;
+} */
+.selection select{
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+}
+.selection label{
+    font-family: "Catamaran", sans-serif;
+}
+
+.hint {
+  color: var(--secondary-color);
+  font-weight: normal;
+}
+
+@media (min-width: 768px){
+    .book-form .form {
+        max-width: 700px;
+    }
+    .book-form .form .names,
+    .book-form .form .dates{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .book-form .form .names input,
+    .book-form .form .dates input{
+        width: 300px;
+    }
+
+    .book-form .form .checkbox{
+        display: flex;
+        justify-content: left;    
+    }
+    .book-form .form .checkbox input{
+        margin-left: 200px;
+    }
+
+    .form .btn-offer{
+        margin-top: 30px;
+        margin-left: 250px;
+    }
+}
+@media (min-width: 1024px) {
+  .book-form {
+    padding: 150px 20px;
+  }
+  
+}
+

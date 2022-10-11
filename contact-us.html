@@ -7,9 +7,8 @@
     <meta name="description" content="a model hotel website built by Danny Kinaro">
     <meta name="keywords" content="Hotel website, Hotel management system">
     <meta name="author" content="Danny Kinaro">
-
-    <link rel="stylesheet" href="style.css"></link>
-    <link rel="stylesheet" href="about.css"></link>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-us.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
@@ -21,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Hotel Website | About</title>
+    <title>Hotel Website | Contacts</title>
 </head>
 
 
@@ -55,48 +54,32 @@
             <i class="fas fa-bars"></i>
     </div>
 
+
 </header>
 
 <!-- SHOWCASE SECTION -->
-<section class="showcase about-showcase">
-    <div class="overlay">
+    <section class="showcase contacts-showcase">
+        <div class="overlay">
+            <h1>Contact Us</h1>
+            <div class="header-underline">
+        </div>
+    </section>
 
-        <h1>About Us </h1>
-        <div class="header-underline"></div>       
-
-
+<section class="contacts">
+    <div>
+        <h2>Send us a message or query. We listen</h2>
+        <div class="header-underline"></div>
+        <p>All fields are required</p>
     </div>
-</section>
 
-    <section class="about">
-            <div class="cards">
-                <h4>Founded</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque accusantium commodi cum doloremque deserunt. Repudiandae cumque minus unde, dolorem labore fugiat assumenda excepturi exercitationem cum quasi. Perspiciatis, dolorum! Perferendis!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, neque incidunt! Voluptatem, amet corporis alias impedit adipisci in quibusdam eum?
-                </p>
-            </div>
-            <div class="cards">
-                <h4>Reservations</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque accusantium commodi cum doloremque deserunt. Repudiandae cumque minus unde, dolorem labore fugiat assumenda excepturi exercitationem cum quasi. Perspiciatis, dolorum! Perferendis!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, neque incidunt! Voluptatem, amet corporis alias impedit adipisci in quibusdam eum?
-                </p>
-            </div>
-            <div class="cards">
-                <h4>Location</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque accusantium commodi cum doloremque deserunt. Repudiandae cumque minus unde, dolorem labore fugiat assumenda excepturi exercitationem cum quasi. Perspiciatis, dolorum! Perferendis!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, neque incidunt! Voluptatem, amet corporis alias impedit adipisci in quibusdam eum?
-                </p>
-            </div>
-    </section>  
+    <form class="form" netlify>
+    <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+    <input type="text" name="secondName" id="secondName" placeholder="Enter your second name" required>
+    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+    <textarea name="textArea" id="textArea" cols="30" rows="10" placeholder="Enter you message/query" required></textarea>
+    <button class="btn-offer submit">Submit</button>
+    </form>
+    
 </section>
 
 <section class="footer">

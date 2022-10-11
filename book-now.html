@@ -7,9 +7,8 @@
     <meta name="description" content="a model hotel website built by Danny Kinaro">
     <meta name="keywords" content="Hotel website, Hotel management system">
     <meta name="author" content="Danny Kinaro">
-
-    <link rel="stylesheet" href="style.css"></link>
-    <link rel="stylesheet" href="about.css"></link>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="book-now.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
@@ -21,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Hotel Website | About</title>
+    <title>Hotel Website | Booking</title>
 </head>
 
 
@@ -42,7 +41,7 @@
             <li><a href="./about.html">About</a></li>
             <li><a href="./services.html">Services</a></li>
             <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -55,49 +54,62 @@
             <i class="fas fa-bars"></i>
     </div>
 
+
 </header>
 
 <!-- SHOWCASE SECTION -->
-<section class="showcase about-showcase">
-    <div class="overlay">
+<section class="showcase booking">
+<div class="overlay">
 
-        <h1>About Us </h1>
+        <h1>Booking and Reservations</h1>
         <div class="header-underline"></div>       
 
+    </section>
 
-    </div>
+<!--BOOKING SECTION  -->
+<section class="book-form">
+    <form class="form" netlify>
+        <h2>FILL IN THE FORM TO MAKE YOUR RESERVATION</h2>
+        <div class="names">
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+            <input type="text" name="Surname" id="surname" placeholder="Surname" required>
+        </div>
+        <div>
+        <label for="email" class="hint">*We need your email to send an invoice</label>
+        <input type="email" name="email" id="email" placeholder="example@mail.com">
+        </div>
+
+        <div class="dates">
+            <p><label for="date">Enter your expected arrival date</label>
+            <input type="date" name="checkin-date" id="checkOut"></p>
+
+            <p><label for="date">Enter Expected Check-Out Date</label>
+            <input type="date" name="check-out" id="checkOut"></p>
+        </div>
+        
+        <div class="checkbox">
+            <label for="checkBox">Pets?</label>
+            <input type="checkbox" name="checkBox" id="pets">
+        </div>
+        <div class="selection">
+            <label for="selection">Select your preferred suite</label>
+            <select name="selection" id="selection">
+                <option value="singleRoom">Single Room</option>
+                <option value="deluxeRoom" selected>Deluxe Room</option>
+                <option value="doubleDeluxeRoom">Double Deluxe Room</option>
+                <option value="presidentialSuite">Presidential Suite</option>
+                <option value="penthouse">Penthouse</option>
+            </select>
+        </div>
+
+        <div>
+            <button class="btn-offer">Make Reservation</button>
+        </div>
+    </form>
+    
 </section>
 
-    <section class="about">
-            <div class="cards">
-                <h4>Founded</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque accusantium commodi cum doloremque deserunt. Repudiandae cumque minus unde, dolorem labore fugiat assumenda excepturi exercitationem cum quasi. Perspiciatis, dolorum! Perferendis!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, neque incidunt! Voluptatem, amet corporis alias impedit adipisci in quibusdam eum?
-                </p>
-            </div>
-            <div class="cards">
-                <h4>Reservations</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque accusantium commodi cum doloremque deserunt. Repudiandae cumque minus unde, dolorem labore fugiat assumenda excepturi exercitationem cum quasi. Perspiciatis, dolorum! Perferendis!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, neque incidunt! Voluptatem, amet corporis alias impedit adipisci in quibusdam eum?
-                </p>
-            </div>
-            <div class="cards">
-                <h4>Location</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque accusantium commodi cum doloremque deserunt. Repudiandae cumque minus unde, dolorem labore fugiat assumenda excepturi exercitationem cum quasi. Perspiciatis, dolorum! Perferendis!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, neque incidunt! Voluptatem, amet corporis alias impedit adipisci in quibusdam eum?
-                </p>
-            </div>
-    </section>  
-</section>
+<!-- FOOTER -->
 
 <section class="footer">
     <div class="logo">
@@ -112,7 +124,7 @@
         <li><a href="./about.html">About</a></li>
         <li><a href="./services.html">Services</a></li>
         <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact-us.html">Contact Us</a></li>
+        <li><a href="./contact-us">Contact Us</a></li>
     </ul>
     </div>
 
