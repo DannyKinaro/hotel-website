@@ -93,7 +93,18 @@ header {
     color: var(--primary-color);
 }
 .header .book-now-button {
-  display: none;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 600;
+    color: #f1f1f1;
+    letter-spacing: 0.5px;
+}
+
+.header .book-now-button:hover{
+    background-color: transparent;
 }
 
 .header .menuBtn {
@@ -322,6 +333,11 @@ header {
     gap: 20px;
   }
 }
+@media (max-width:768px){
+    .header .book-now-button{
+        display: none;
+    }
+}
 @media (min-width: 768px) {
     .header {
         display: flex;
@@ -330,6 +346,7 @@ header {
     .header .menuBtn{
         display: none;
     }
+
     .header .navbar{
         position: relative;
         opacity: 1;
